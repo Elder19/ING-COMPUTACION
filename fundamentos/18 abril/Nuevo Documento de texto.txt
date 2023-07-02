@@ -1,0 +1,4 @@
+Jerarquia de memorias:
+	disco macanico: tiene mucho estres a la hora de inciar la computadora, el muy lento al realizar operaciones de trasfondo.
+
+	* almacenan datos para covertirlos en informacion, 

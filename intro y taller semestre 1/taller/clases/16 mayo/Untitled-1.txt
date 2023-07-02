@@ -1,0 +1,63 @@
+"""
+Crear un diccionario vacío:
+    
+mi_diccionario = {}
+
+
+Crear un diccionario con elementos:
+mi_diccionario = {'clave1': valor1, 'clave2': valor2, 'clave3': valor3}
+
+Acceder a un valor utilizando una clave:
+valor = mi_diccionario['clave']
+
+
+Agregar un nuevo par clave-valor al diccionario:
+mi_diccionario['nueva_clave'] = nuevo_valor
+
+
+Actualizar el valor de una clave existente:
+mi_diccionario['clave_existente'] = nuevo_valor
+
+Eliminar un par clave-valor del diccionario:
+del mi_diccionario['clave']
+
+Verificar si una clave existe en el diccionario:
+if 'clave' in mi_diccionario:
+    # hacer algo
+
+Obtener una lista de todas las claves del diccionario:
+
+claves = mi_diccionario.keys
+
+Obtener una lista de todos los valores del diccionario:
+valores = mi_diccionario.values()
+
+ecorrer un diccionario utilizando un bucle for:
+for clave, valor in mi_diccionario.items():
+    # hacer algo con clave y valor
+"""
+
+"""
+SET
+
+Crear un conjunto vacío:
+mi_set = set()
+
+
+Crear un conjunto con elementos:
+mi_set = {elemento1, elemento2, elemento3}
+
+Agregar elementos a un conjunto:
+mi_set.add(elemento)
+
+Eliminar un elemento de un conjunto:
+mi_set.remove(elemento)
+
+Verificar si un elemento está en el conjunto:
+if elemento in mi_set:
+
+Realizar la unión de dos conjuntos:
+union_set = mi_set1.union(mi_set2)
+"""
+    
+

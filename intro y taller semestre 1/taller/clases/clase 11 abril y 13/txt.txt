@@ -1,0 +1,21 @@
+SISTEMA BINARIO:
+	base 	10 a 2
+ *como hacer la trasformacion: consiste en ir dividiendo entre 2 al final utilizar los residuos para formar un numero se detiene cuando el nnuemro a dividir sea 0
+*para pasarlo a binario en codigo solamente se eleva a potencia 0*10**0
+* pasar el binario a base 10 binario*2**contador, 0*2**0
+base
+
+
+ contador=0
+    respuesta=0
+
+    if f !=():
+        if base>1:
+            n=1
+            while base!=0:
+                residuo=base%f
+                base=base//f
+                respuesta+=respuesta*10+residuo
+                contador+=1
+            return respuesta
+print( base10abasex(3,20))

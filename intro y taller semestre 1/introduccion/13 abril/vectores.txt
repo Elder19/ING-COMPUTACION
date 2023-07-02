@@ -1,0 +1,7 @@
+* los vectores debe ser del mismo tamaño[0,0,0,0,0].
+*  Es como una lista de listas
+* Deben ser del mismo tipo int, str o x
+* todos los elementos inician en 0
+* sirve para sumas, resta y escalar
+*MATRICES
+/ es una lista de listas
