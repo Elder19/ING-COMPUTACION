@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Tarea2
+build_property.RootNamespace = Tarea2
+build_property.ProjectDir = C:\Users\coleg\OneDrive\Escritorio\basesdedatos\SistemaClinicaPriamyql\Programa\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\coleg\OneDrive\Escritorio\basesdedatos\SistemaClinicaPriamyql\Programa
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/asignarParticipantes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYXNpZ25hclBhcnRpY2lwYW50ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Cita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/CitaMedica.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2l0YU1lZGljYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Consulta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/consulta2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29uc3VsdGEyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/consulta3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29uc3VsdGEzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/consulta4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29uc3VsdGE0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Consulta5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGE1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/ConsultaResultados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFSZXN1bHRhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/consultas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY29uc3VsdGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/MedicamentoCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNhbWVudG9DaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/procedimientos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccHJvY2VkaW1pZW50b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/ProcedimientosMedicos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvY2VkaW1pZW50b3NNZWRpY29zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/ResultadoCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzdWx0YWRvQ2l0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/resultadosprocedimientos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNccmVzdWx0YWRvc3Byb2NlZGltaWVudG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/tratamientoCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcdHJhdGFtaWVudG9DaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/TratamientoProcedimiento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhdGFtaWVudG9Qcm9jZWRpbWllbnRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/coleg/OneDrive/Escritorio/basesdedatos/SistemaClinicaPriamyql/Programa/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-9xno6lqyia

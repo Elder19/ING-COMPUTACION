@@ -1,0 +1,115 @@
+@page
+@model Tarea2.Pages.TratamientoCi
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la cirujia</title>
+    <style>
+                body {
+    font-family: Arial, sans-serif;
+    background-color: #8bd1dd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    font-size: 1.1rem;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+button {
+    padding: 15px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fdd;
+    border: 1px solid #d88;
+    border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de cirujia</h1>
+        <p>Ingrese los datos correspondientes.</p>
+        
+        <form method="post">
+            <label for="IDCita">Seleccione la cirujia para asignar tratamiento:</label>
+            <select id="IDCita" name="IDCita" required>
+                <option value="">Seleccione una cita</option>
+                @foreach (var emp in Model.citas)
+                {
+                    var paciente = Model.Pacientes.FirstOrDefault(p => p.CedulaP == emp.CedulaP);
+                    if (paciente != null)
+                    {
+                        <option value="@emp.IdProcedimiento">@paciente.Nombre (Id procedimiento: @emp.IdProcedimiento)</option>
+                    }
+                }
+            </select>
+
+            <label for="Resultado">Indique la epicrisis de la cirujia:</label>
+            <input type="text" id="Resultado" name="Resultado" required />
+
+            <button type="submit">Guardar</button>
+        </form>
+
+        <form method="post" asp-page="Procedimientosmedicos">
+            <button type="submit">Volver al menú</button>
+        </form>
+    </div>
+</body>
+</html>

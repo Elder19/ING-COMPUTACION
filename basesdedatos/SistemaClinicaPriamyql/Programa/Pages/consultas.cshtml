@@ -1,0 +1,90 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background-color: #8bd1dd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+        }
+        
+        .container {
+           width: 100%;
+           max-width: 800px;
+           padding: 50px;
+           background-color: #e5e9e9;
+           border-radius: 8px;
+           text-align: center; 
+        }
+        
+        h1 {
+            font-size: 3rem;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 16px;
+            background-color: #1f45ad;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ddd125;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de consultas</h1>
+
+        <form method="get" action="\Consulta5">
+            <button type="submit"> conuslta 5</button>
+        </form>
+
+        <form method="get" action="/consulta4">
+            <button type="submit">consulta 4</button>
+        </form>
+         <form method="get" action="/consulta3">
+     <button type="submit">consulta 3</button>
+ </form>
+        <form method="get" action="/consulta2">
+            <button type="submit">consulta 2</button>
+        </form>
+
+       <form method="get" action="/Consulta">
+           <button type="submit">consulta 1</button>
+       </form>
+        <form method="get" action="/Index">
+            <button type="submit">Menu Principal</button>
+        </form>
+    </div>
+</body>
+</html>
+

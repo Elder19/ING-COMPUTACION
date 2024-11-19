@@ -1,0 +1,139 @@
+@page
+@model Tarea2.Pages.MedicamentoCita
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de medicamento</title>
+    <style>
+        /* Estilos */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8bd1dd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1.1rem;
+        }
+        button {
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fdd;
+            border: 1px solid #d88;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de medicamento</h1>
+        <p>Ingrese los datos correspondientes.</p>
+        
+        <form method="post">
+            <label for="IdTratamiento">Seleccione el tratamiento para asignar medicamento:</label>
+            <select id="IdTratamiento" name="IdTratamiento" required>
+                @foreach (var emp in Model.tratamientos)
+                {
+                  
+                    var paciente = Model.Pacientes.FirstOrDefault(p => p.CedulaP == emp.CedulaP);
+               
+                    // Verifica si IdCita o IdProcedimiento es nulo
+                    if (emp.IdCita != null && emp.IdCita != 0)
+                    {
+                        <option value="@emp.IdTratamiento">@paciente.Nombre (Id tratamiento: @emp.IdTratamiento, cita: @emp.IdCita)</option>
+                    }
+                    else 
+                    {
+                        <option value="@emp.IdTratamiento">@paciente.Nombre (Id tratamiento: @emp.IdTratamiento, procedimiento: @emp.IdProcedimiento)</option>
+                    } 
+                }
+            </select>
+            
+            <label for="Nombre">Seleccione el medicamento:</label>
+            <select id="Nombre" name="Nombre" required>
+               @foreach (var emp in Model.medicamentos)
+               {
+                   <option value="@emp.Nombre">@emp.Nombre</option>
+               }
+            </select>
+
+            <label for="cantidad">Ingrese la cantidad de unidades</label>
+            <input type="number" id="cantidad" name="cantidad" required />
+
+            <label for="Dosis">Ingrese la dosis:</label>
+            <input type="text" id="Dosis" name="Dosis" required />
+
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="Asignado">Asignado</option>
+                <option value="No asignado">No asignado</option>
+            </select>
+
+            <button type="submit">Guardar</button>
+        </form>
+
+        <form method="post" asp-page="Index">
+            <button type="submit">Volver al menú</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@page
+@model Tarea2.Pages.consulta3
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Consulta 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8bd1dd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px; 
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px; 
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px; 
+            text-align: left;
+        }
+        container {
+   width: 90%;
+   max-width: 700px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+   text-align: center;}
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 15px; 
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem; 
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultados de la Consulta 3</h1>
+        
+        @if (Model.Consulta3Resultados.Count == 0)
+        {
+            <p>No se encontraron resultados.</p>
+        }
+        else
+        {
+            <table>
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Cantidad</th>
+                        <th>Padecimiento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Consulta3Resultados)
+                    {
+                        <tr>
+                            <td>@item.Fecha</td>
+                            <td>@item.Cantidad</td>
+                            <td>@item.NombrePadecimiento</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        <form method="post" asp-page="consultas">
+            <button type="submit">Volver al menú</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+El portafolio presenta los siguientes problemas: por alguna razón, las fechas fallan. Se supone que el formato del INSERT es yyyy/mm/dd, sin embargo, en la mayoría de los códigos las toma en el formato yyyy/dd/mm, lo que me genera un conflicto de fechas.
+
+Los últimos ejercicios están ajustados para demostrar que el código funciona, ya que no tengo suficiente información insertada para que funcionen como se pide, porque tengo problemas con las claves foráneas, los cuales estoy tratando de resolver.
+

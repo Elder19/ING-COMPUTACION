@@ -1,0 +1,119 @@
+@page
+@model Tarea2.Pages.TratamientoC
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de tratamiento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8bd1dd;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px; 
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 10px; 
+            display: block;
+            color: #333;
+            font-size: 1.1rem;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 15px; 
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1.1rem; 
+        }
+        button {
+            padding: 15px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fdd;
+            border: 1px solid #d88;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de tratamiento</h1>
+        <p>Ingrese los datos correspondientes.</p>
+        
+        <form method="post">
+            <label for="IDCita">Seleccione la cita para asignar tratamiento:</label>
+            <select id="IDCita" asp-for="IdProcedimiento" required>
+                <option value="">Seleccione una cita</option>
+                @foreach (var emp in Model.citas)
+                {
+                    var paciente = Model.Pacientes.FirstOrDefault(p => p.CedulaP == emp.CedulaP);
+                    if (paciente != null)
+                    {
+                        <option value="@emp.IdProcedimiento">@paciente.Nombre (Id procedimiento: @emp.IdProcedimiento)</option>
+                    }
+                }
+            </select>
+
+            <label for="Duracion">Duración en días del tratamiento:</label>
+            <input type="number" id="Duracion" asp-for="Duracion" required />
+
+            <label for="Tipo">Ingrese el tipo de tratamiento:</label>
+            <input type="text" id="Tipo" asp-for="Tipo" placeholder="Escriba el tipo de tratamiento" required />
+            
+            <button type="submit">Guardar</button>
+        </form>
+
+        <form method="post" asp-page="ProcedimientosMedicos">
+            <button type="submit">Volver al menú</button>
+        </form>
+    </div>
+</body>
+</html>
